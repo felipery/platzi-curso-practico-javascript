@@ -54,3 +54,6 @@ const perimetroCirculo = (radio) => diametroCirculo(radio) * PI;
 const areaCirculo = (radioCirculo) => Math.pow(radioCirculo, 2) * PI;
 // console.log('el área del círculo es: ' + areaCirculo + ' cm²');
 console.groupEnd();
+
+// Aquí interactuamos con el HTML
+function calcularPerimetroCuadrado()
