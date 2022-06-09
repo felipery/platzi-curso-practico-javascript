@@ -56,4 +56,36 @@ const areaCirculo = (radioCirculo) => Math.pow(radioCirculo, 2) * PI;
 console.groupEnd();
 
 // Aquí interactuamos con el HTML
-function calcularPerimetroCuadrado()
+function calcularPerimetroCuadrado() {
+  const input = document.getElementById('inputCuadrado');
+  const value = input.value;
+  const perimetro = perimetroCuadrado(value);
+  alert('El perímetro del cuadrado es: ' + perimetro);
+}
+
+function calcularAreaCuadrado() {
+  const input = document.getElementById('inputCuadrado');
+  const value = input.value;
+  const area = areaCuadrado(value);
+  alert('El área del cuadrado es: ' + area);
+}
+
+function calcularAlturaTriangulo() {
+  const inputLado1 = document.getElementById('inputTrianguloLado1');
+  const inputLado2 = document.getElementById('inputTrianguloLado2');
+  const inputBase = document.getElementById('inputTrianguloBase');
+  const value1 = inputLado1.value;
+  const value2 = inputLado2.value;
+  const base = inputBase.value;
+  if (value1 === value2) {
+    const altura = Math.sqrt(Math.pow(value1, 2) - Math.pow(base, 2) / 4);
+    alert('Es un triángulo Isoceles y su altura es: ' + altura);
+  } else {
+    alert('No es un triángulo isoceles');
+  }
+}
+
+function calcularAreaTriangulo() {
+  const area = areaCuadrado(value);
+  alert('El área del cuadrado es: ' + area);
+}
