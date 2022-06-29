@@ -1,8 +1,13 @@
 function calcularDescuento() {
-  const inputPrecio = document.getElementById('inputPrecio').value;
-  const inputDescuento = document.getElementById('inputDescuento').value;
-  const precioConDescuento = (inputPrecio * (100 - inputDescuento)) / 100;
-  console.log(`El precio es ${inputPrecio}`);
-  console.log(`El descuento es ${inputDescuento} %`);
-  console.log(`El precio a pagar con descuento es ${precioConDescuento}`);
+  const inputPrice = document.getElementById('InputPrice').value;
+  const inputDiscount = document.getElementById('InputDiscount').value;
+  const precioWithDiscount = (inputPrice * (100 - inputDiscount)) / 100;
+  console.log(`El precio es ${inputPrice}`);
+  console.log(`El descuento es ${inputDiscount} %`);
+  console.log(`El precio a pagar con descuento es ${precioWithDiscount}`);
+}
+
+function onclickCalcularDescuento() {
+  const inputPrice = document.getElementById('InputPrice').value;
+  const inputDiscount = document.getElementById('InputDiscount').value;
 }

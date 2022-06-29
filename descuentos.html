@@ -9,17 +9,19 @@
   <body>
     <header>
       <h1>Precio con Descuento</h1>
+      <p>
+        Este es el segudno taller del Curso Práctico de JavaScript de Platzi
+      </p>
     </header>
     <section>
+      <h2>Calcula el precio a pagar de tus productos deseados:</h2>
       <form>
-        <label for="inputPrecio"> Ingrese el precio </label>
-        <input id="inputPrecio" type="number" />
-        <br />
-        <label for="inputDescuento"> Ingrese el descuento </label>
-        <input id="inputDescuento" type="number" />
-        <br />
-        <button type="button" onclick="calcularDescuento()">
-          Calcular pago
+        <label for="InputPrice">Escribe el precio de tu producto</label>
+        <input id="InputPrice" type="number" />
+        <label for="InputDiscount">Escribe el descuento de tu producto:</label>
+        <input id="InputDiscount" type="number" />
+        <button type="button" onclick="onclickCalcularDescuento()">
+          Calcular el precio con descuento
         </button>
       </form>
     </section>
