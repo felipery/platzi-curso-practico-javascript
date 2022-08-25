@@ -2,7 +2,7 @@
 
 ...
 
-## Taller #1: figuras geométricas
+## Taller #3: promedio, mediana y moda
 
 - Primer paso: definir las formulas
 - Segundo paso: implementar las fórmulas en JavaScript
